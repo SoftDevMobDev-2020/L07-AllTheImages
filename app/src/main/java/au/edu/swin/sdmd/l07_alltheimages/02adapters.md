@@ -13,7 +13,9 @@ onBindViewHolder(holder, position)
 
 To give you an idea of the process, here's a diagram based on BNR Chapter 9.
 
-```puml
+If you have PlantUML installed, place your cursor inside the following text and click on the PlantUML button on the right-hand side of the screen.
+
+@startuml
 participant RecyclerView
 participant Adapter
 RecyclerView -> Adapter : onCreateViewHolder()
@@ -23,4 +25,4 @@ note right: Ok. Inflate view, create new holder, pass it back.
 RecyclerView -> Adapter : onBindViewHolder(ViewHolder, 0)
 note left: I need data at index 0 to be shown in this ViewHolder
 note right: Ok. Gets data at position 0, set values of views.
-```
+@enduml
